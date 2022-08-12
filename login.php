@@ -10,7 +10,6 @@ if(!empty($_POST['user']) && !empty($_POST['password'])){
         if(password_verify($_POST['password'], $password)){
             $_SESSION['message'] = "Inicio de sesión exitoso";
             $_SESSION['type'] = "success";
-            header('Location: index.php');
         } else{
             $_SESSION['message'] = "Usuario o contraseña incorrectos";
             $_SESSION['type'] = "danger";
