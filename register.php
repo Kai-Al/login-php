@@ -20,6 +20,7 @@ if(!empty($_POST['user']) && !empty($_POST['password'])){
 <div class="container p-4">
 <div class="col-md-4 mx-auto">
     <h1>Registro</h1>
+    <?php include("includes/alert.php")?>
     <div class="card card-body">
         <form action="register.php" method="POST">
             <div class="form-group">
@@ -38,7 +39,7 @@ if(!empty($_POST['user']) && !empty($_POST['password'])){
         </form>
         </div>
     </div> 
-    <?php include("includes/alert.php")?>
+
 </div>
 
 <?php include("includes/footer.php")?>
